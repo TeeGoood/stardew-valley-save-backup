@@ -145,5 +145,3 @@ To remove the backup script and service:
 - This script is intended for single-user Linux setups.
 - Always make sure the game is not running when restoring saves to avoid corruption.
 - You can customize backup locations or service behavior by editing the scripts.
-
----
