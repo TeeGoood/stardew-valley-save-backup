@@ -1,6 +1,6 @@
 #!/bin/bash
 
-root=~/.config/stardew-valley-save-backups
+root=$HOME/.config/stardew-valley-save-backups
 
 inotifywait -m -e moved_to --include "_old$" ~/.config/StardewValley/Saves/* |
 while read path action file; do

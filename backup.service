@@ -1,0 +1,9 @@
+[Unit]
+Description=Stardew Valley Save Backup (User)
+
+[Service]
+ExecStart=%h/bin/stardew-valley-save-backup.sh
+Restart=always
+
+[Install]
+WantedBy=default.target
