@@ -8,8 +8,6 @@ This project provides an automated backup solution for Stardew Valley save files
 - **Timestamped Backups:** Each backup is saved with a unique timestamp and incremental number.
 - **Easy Setup:** Simple installation script and systemd integration for automatic startup.
 
----
-
 ## Prerequisites
 
 - **Operating System:** Linux (with systemd)
@@ -20,8 +18,6 @@ Install `inotify-tools` if you don't have it:
 ```bash
 sudo apt-get install inotify-tools
 ```
-
----
 
 ## Setup
 
@@ -52,8 +48,6 @@ sudo apt-get install inotify-tools
    systemctl --user status stardew-valley-save-backup
    ```
 
----
-
 ## How It Works
 
 - The script monitors your Stardew Valley save directory:
@@ -68,8 +62,6 @@ sudo apt-get install inotify-tools
   ```
   FarmName_1_20240601XXXX
   ```
-
----
 
 ## Restoring a Backup
 
@@ -96,8 +88,6 @@ sudo apt-get install inotify-tools
 
    Your restored save should now appear in-game.
 
----
-
 ## Managing the Backup Service
 
 - **Check Service Status**
@@ -120,8 +110,6 @@ sudo apt-get install inotify-tools
   systemctl --user restart stardew-valley-save-backup
   ```
 
----
-
 ## Uninstall
 
 To remove the backup script and service:
@@ -137,8 +125,6 @@ To remove the backup script and service:
    rm ~/bin/stardew-valley-save-backup.sh
    rm ~/.config/systemd/user/stardew-valley-save-backup.service
    ```
-
----
 
 ## Notes
 
